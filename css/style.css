@@ -8596,10 +8596,23 @@ footer .item .copy-right p a {
   background: transparent;
   color: #111111;
   font-size: 13px;
+  margin-bottom: 10px;
 }
 
+.about-us .item li .subscribe input {
+  width: 500px;
+  max-width: 80vw;
+  padding: 15px;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background: transparent;
+  color: #111111;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+
 .about-us .item li .subscribe .subs {
-  position: absolute;
   top: 0;
   right: 0;
   width: 50px;
@@ -8619,4 +8632,16 @@ footer .item .copy-right p a {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #000;
   color: transparent;
+}
+.reduce{
+  word-break: break-all; 
+}
+
+input[type=submit] {
+  background: #111 !important;
+  color: #ffffff !important;
+}
+input[type=submit]::after {
+  background: #ffffff !important;
+  color: #111111 !important;
 }
