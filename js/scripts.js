@@ -936,6 +936,8 @@ $('[data-carousel="swiper"]').each(function () {
     };
 });
 
-
+function descargar() {
+    alert("descarga");
+  }
 
 

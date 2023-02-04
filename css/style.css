@@ -1559,13 +1559,6 @@ body {
   transition: all .4s;
 }
 
-.butn:hover .char {
-  -webkit-animation: fadeInUp 0.3s cubic-bezier(0.3, 0, 0.7, 1) both;
-  animation: fadeInUp 0.3s cubic-bezier(0.3, 0, 0.7, 1) both;
-  -webkit-animation-delay: calc(30ms * var(--char-index));
-  animation-delay: calc(30ms * var(--char-index));
-}
-
 .butn.bord {
   border: 1px solid #000;
 }
@@ -1597,13 +1590,6 @@ body {
   color: #333;
 }
 
-.butn.color {
-  background: -webkit-gradient(linear, left top, right top, from(#12c2e9), color-stop(#c471ed), to(#f64f59));
-  background: -webkit-linear-gradient(left, #12c2e9, #c471ed, #f64f59);
-  background: -o-linear-gradient(left, #12c2e9, #c471ed, #f64f59);
-  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
-  border: transparent;
-}
 
 .butn.color:hover {
   background: #fff;
@@ -2238,29 +2224,6 @@ body {
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
   transform: translateY(0);
-}
-
-.slider .parallax-slider .caption .thin {
-  color: #12c2e9;
-  font-size: 30px;
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 8px;
-  margin-bottom: 5px;
-  opacity: 0;
-  -webkit-transform: translateY(-20px);
-  -ms-transform: translateY(-20px);
-  transform: translateY(-20px);
-  -webkit-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s;
-  -webkit-transition-delay: .8s;
-  -o-transition-delay: .8s;
-  transition-delay: .8s;
-}
-
-.slider .parallax-slider .caption .thin span {
-  color: #12c2e9;
 }
 
 .slider .parallax-slider .caption h1 {
@@ -4384,68 +4347,7 @@ footer .item .copy-right p a {
   .hamenu .menu-links .main-menu .sub-menu li {
     font-size: 16px;
   }
-  .topnav .container-fluid {
-    padding: 0 15px;
-  }
-  .slider-bus .caption h1 {
-    font-size: 50px;
-  }
-  .showcase-full .dots {
-    display: none;
-  }
-  .slider .txt-botm .swiper-nav-ctrl.swiper-button-next {
-    right: 20px;
-  }
-  .slider .txt-botm .swiper-nav-ctrl.swiper-button-prev {
-    left: 20px;
-  }
-  .pages-header .cont .path {
-    font-size: 15px;
-  }
-  .pages-header .cont .path span {
-    margin: 0 10px;
-  }
-  .pages-header .capt h1 {
-    font-size: 24px;
-  }
-  .page-header .cont h1 {
-    font-size: 40px;
-  }
-  .slider .swiper-pagination-fraction.steps {
-    bottom: 60px;
-  }
-  .particles .cont h1 {
-    font-size: 30px;
-    font-weight: 700;
-  }
-  .circle-slide .swiper-slide .bg-img {
-    height: 280px !important;
-    width: 280px !important;
-  }
-  .freelancre .cont h1 {
-    font-size: 22px;
-  }
-  .freelancre .img {
-    width: 200px;
-    height: 200px;
-  }
-  .showcase-carus.circle-slide .caption h1,
-  .showcase-carus.circle-slide .copy-cap h1 {
-    font-size: 40px;
-  }
-  .works-header .capt h2 {
-    font-size: 30px;
-    letter-spacing: 1px;
-  }
-  .pages-header .cont h1 {
-    font-size: 20px;
-  }
-  .sec-head h3 {
-    font-size: 20px;
-  }
-  .sec-head h2 {
-    font-size: 55px;
-  }
+
   .about-us .img .stauts {
     display: none;
   }
@@ -4636,8 +4538,4 @@ footer .item .copy-right p a {
 input[type=submit] {
   background: #111 !important;
   color: #ffffff !important;
-}
-input[type=submit]::after {
-  background: #ffffff !important;
-  color: #111111 !important;
 }
