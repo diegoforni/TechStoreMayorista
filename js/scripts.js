@@ -945,6 +945,17 @@ function download() {
             alert("Teléfono incorrecto");
             } else{
                 document.getElementById('dafoca').click();
+                Email.send({
+                    Host : "smtp.elasticemail.com",
+                    Username : "d.forni0204@gmail.com",
+                    Password : "FA372E9DEC46A0491D89C035C20A1D468292",
+                    To : 'diegofornidominios@gmail.com',
+                    From : "d.forni0204@gmail.com",
+                    Subject : "Nueva descarga",
+                    Body : "Email: " + document.getElementById("email").value + "<br> Teléfono: " + tel,
+                }).then(
+                  message => alert(message)
+                );
             }
   }
 
