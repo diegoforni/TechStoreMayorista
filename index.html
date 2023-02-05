@@ -244,9 +244,10 @@
                                             <ul>
                                                 <li>
                                                     <div class="subscribe">
-                                                        <input type="text" id="email" placeholder="Dejanos tu correo">
-                                                        <input type="text" id="email" placeholder="Celular con código de area">
-                                                        <input type="submit" onclick="descargar()" value="Descargar"></span>
+                                                        <input type="email" id="email" name="email" required autocomplete="email" placeholder="Dejanos tu correo" >
+                                                        <input type="tel" id="tel" name="phone" required autocomplete="tel" placeholder="Celular con código de area">
+                                                        <input type="submit" onclick="download()" value="Descargar"></span>
+                                                        <a href="02.jpg" download id="dafoca" hidden></a>
                                                     </div>
                                                 </li>
                                             </ul>

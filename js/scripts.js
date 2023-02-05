@@ -936,8 +936,15 @@ $('[data-carousel="swiper"]').each(function () {
     };
 });
 
-function descargar() {
-    alert("descarga");
+function download() {
+    var email = document.getElementById("email").value.indexOf("@");
+    var tel = document.getElementById("tel").value;
+    if (email == -1) {
+        alert("Correo no valido");
+      } else if (tel.length > 16 || tel.lenght < 10) {
+            alert("Teléfono incorrecto");
+            } else{
+                document.getElementById('dafoca').click();
+            }
   }
-
 
