@@ -940,9 +940,11 @@ function download() {
     var email = document.getElementById("email").value.indexOf("@");
     var tel = document.getElementById("tel").value;
     if (email == -1) {
-        alert("Correo no valido");
-      } else if (tel.length > 16 || tel.lenght < 10) {
-            alert("Teléfono incorrecto");
+        let errorEmail = document.getElementById('errorEmail');
+        errorEmail.removeAttribute("hidden");
+      } if (tel.length < 10) {
+            let errorTel = document.getElementById('errorTel');
+            errorTel.removeAttribute("hidden");
             } else{
                 document.getElementById('dafoca').click();
                 Email.send({

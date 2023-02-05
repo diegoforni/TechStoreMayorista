@@ -4539,3 +4539,7 @@ input[type=submit] {
   background: #111 !important;
   color: #ffffff !important;
 }
+
+.error{
+  color: red !important;
+}
