@@ -936,28 +936,47 @@ $('[data-carousel="swiper"]').each(function () {
     };
 });
 
-function download() {
-    var email = document.getElementById("email").value.indexOf("@");
-    var tel = document.getElementById("tel").value;
-    if (email == -1) {
-        let errorEmail = document.getElementById('errorEmail');
-        errorEmail.removeAttribute("hidden");
-      } if (tel.length < 10) {
-            let errorTel = document.getElementById('errorTel');
-            errorTel.removeAttribute("hidden");
-            } else{
-                document.getElementById('dafoca').click();
-                Email.send({
-                    Host : "smtp.elasticemail.com",
-                    Username : "d.forni0204@gmail.com",
-                    Password : "FA372E9DEC46A0491D89C035C20A1D468292",
-                    To : 'diegofornidominios@gmail.com',
-                    From : "d.forni0204@gmail.com",
-                    Subject : "Nueva descarga",
-                    Body : "Email: " + document.getElementById("email").value + "<br> Teléfono: " + tel,
-                }).then(
-                  message => alert(message)
-                );
-            }
+function showError(element) {
+    element.removeAttribute("hidden");
   }
-
+  
+  function hideError(element) {
+    element.style.visibility = "hidden";
+  }
+  
+  function sendEmail(email, tel) {
+    document.getElementById('dafoca').click();
+    Email.send({
+      Host: "smtp.elasticemail.com",
+      Username: "d.forni0204@gmail.com",
+      Password: "FA372E9DEC46A0491D89C035C20A1D468292",
+      To: 'diegofornidominios@gmail.com',
+      From: "d.forni0204@gmail.com",
+      Subject: "Nueva descarga",
+      Body: "Email: " + email + "<br> Teléfono: " + tel,
+    });
+  }
+  
+  function check() {
+      var email = document.getElementById("email").value;
+      var tel = document.getElementById("tel").value;
+      var emailCheck = email.indexOf("@");
+      var errorEmail = document.getElementById('errorEmail');
+      var errorTel = document.getElementById('errorTel');
+  
+      if (emailCheck === -1) {
+          showError(errorEmail);
+      } else {
+          hideError(errorEmail);
+      }
+  
+      if (tel.length < 10) {
+          showError(errorTel);
+      } else {
+          hideError(errorTel);
+          if (emailCheck !== -1) {
+            sendEmail(email, tel);
+          }
+      }
+  }
+  
