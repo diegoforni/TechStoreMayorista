@@ -668,6 +668,7 @@ Pace.on('done', function () {
 setTimeout(function(){
     preload.remove();
     loading.remove();
+    pase.stop();
 }, 8000);
 
 
