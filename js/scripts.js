@@ -983,8 +983,11 @@ function showError(element) {
 var preload = document.getElementById("preloader");
 
 var loading = document.getElementById("loading");
+var cuerpo = document.getElementById("cuerpo");
+
 
 setTimeout(function(){
     preload.remove();
     loading.remove();
+    cuerpo.classList.add("pace-done");
 }, 8000);
