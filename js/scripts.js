@@ -987,4 +987,4 @@ var loading = document.getElementById("loading");
 setTimeout(function(){
     preload.remove();
     loading.remove();
-}, 5000);
+}, 8000);
