@@ -1,13 +1,4 @@
-/*-----------------------------------------------------------------------------------
 
-    Theme Name: Vie
-    Theme URI: http://
-    Description: Creative Agency & Portfolio
-    Author: UI-ThemeZ
-    Author URI: http://themeforest.net/user/UI-ThemeZ
-    Version: 1.0
-
------------------------------------------------------------------------------------*/
 
 
 $(function () {
@@ -674,6 +665,12 @@ Pace.on('done', function () {
     $('#preloader').addClass("isdone");
     $('.loading').addClass("isdone");
 });
+setTimeout(function(){
+    preload.remove();
+    loading.remove();
+    cuerpo.classList.add("pace-done");
+    Pace.stop;
+}, 8000);
 
 
 /* ===============================  Scroll back to top  =============================== */
