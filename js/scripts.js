@@ -668,7 +668,8 @@ Pace.on('done', function () {
 setTimeout(function(){
     preload.remove();
     loading.remove();
-    pase.stop();
+    pace.stop();
+    document.querySelector("div[class='parce'] ol").style.background = "transparent";
 }, 8000);
 
 
