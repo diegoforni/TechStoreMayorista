@@ -668,8 +668,6 @@ Pace.on('done', function () {
 setTimeout(function(){
     preload.remove();
     loading.remove();
-    cuerpo.classList.add("pace-done");
-    Pace.stop;
 }, 8000);
 
 
@@ -983,9 +981,3 @@ var loading = document.getElementById("loading");
 var cuerpo = document.getElementById("cuerpo");
 
 
-setTimeout(function(){
-    preload.remove();
-    loading.remove();
-    cuerpo.classList.add("pace-done");
-    Pace.stop;
-}, 8000);
