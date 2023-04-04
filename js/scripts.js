@@ -980,3 +980,11 @@ function showError(element) {
       }
   }
   
+var preload = document.getElementById("preloader");
+
+var loading = document.getElementById("loading");
+
+setTimeout(function(){
+    preload.remove();
+    loading.remove();
+}, 5000);
