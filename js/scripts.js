@@ -990,5 +990,5 @@ setTimeout(function(){
     preload.remove();
     loading.remove();
     cuerpo.classList.add("pace-done");
-    Pace.stop
+    Pace.stop;
 }, 8000);
