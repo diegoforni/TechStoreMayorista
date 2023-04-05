@@ -665,11 +665,12 @@ Pace.on('done', function () {
     $('#preloader').addClass("isdone");
     $('.loading').addClass("isdone");
 });
+
 setTimeout(function(){
     preload.remove();
     loading.remove();
-    pace.stop();
-    document.querySelector("div[class='parce'] ol").style.background = "transparent";
+    child = document.getElementById('cuerpo').childNodes[0];
+    child.classList.add("pace-inactive");
 }, 8000);
 
 
